@@ -12,7 +12,7 @@ class App extends Component {
   };
 
   addContact = (name, number) => {
-    const findContact = this.state.contacts.find(
+    const findContact = this.state.contacts.some(
       contactItem => contactItem.name.toLowerCase() === name.toLowerCase(),
     );
 
